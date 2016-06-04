@@ -65,6 +65,9 @@ margin-bottom: 50px;
 #step1{
 	margin-left: 50px;
 }
+.step1{
+	margin-left: 20px;
+}
 #supportingText {
 	margin: 0 205px 0 0;
 	background-color: #DFE3C6;

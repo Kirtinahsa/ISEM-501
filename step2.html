@@ -40,6 +40,20 @@
 				<input type="checkbox" name="" value="">Corn 
 				
 			</p>
+			<form class="step1"id="cr"action="demo_form.asp" method="get">
+			  <input type="checkbox" name="" value=""><strong>Customize Recipe</strong><br>
+			  
+			</form>
+			<div class="step1" id="crdiv">
+				<p>
+				
+					<input type="checkbox" name="" value=""> Add Cheese
+					<input type="checkbox" name="" value=""> App Pepperoni
+					<input type="checkbox" name="" value="">Add Pickles
+					
+					
+				</p>
+			</div>
 
 			<!-- <a href <button class="button" id="findbutton"><a href="findfresh.html">Find Fresh Now</a></button> -->
 			<a href="step3.html" class="button" id="findbutton">Place Order</a>
@@ -81,4 +95,18 @@ Copyright © 2016 HealthyFresh
 </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+   
+        $("#crdiv").hide();
+    
+});
+$(document).ready(function(){
+    $("#cr").click(function(){
+        $("#crdiv").toggle();
+    });
+
+});
+</script>
 </html>
